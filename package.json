@@ -1,6 +1,7 @@
 {
   "name": "time-line",
   "version": "0.0.1",
+  "homepage": "./",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
