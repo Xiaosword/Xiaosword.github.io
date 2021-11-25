@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Container, Typography, Box } from '@material-ui/core'
 import { dateFormat } from '../utils/date'
+import myUrl from '../assets/img/my.jpg'
 import './home.less'
 
 const Home: React.FC = () => {
@@ -35,7 +36,7 @@ const Home: React.FC = () => {
         <Typography color="textPrimary" align="center" component="div">
           <div className="jxsan time-text">AFK：{jxsan}</div>
         </Typography>
-        <img className="me" src="/src/assets/img/my.jpg" alt="" />
+        <img className="photo" src={myUrl} alt="" />
       </Box>
     </Container>
   )
