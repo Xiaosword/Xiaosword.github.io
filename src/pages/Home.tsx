@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Container, Typography, Box } from '@material-ui/core'
 import { dateFormat } from '../utils/date'
-import meUrl from '../assets/img/me.jpg'
+import meUrl from '../assets/img/my.jpg'
 import './home.less'
 
 const Home: React.FC = () => {
