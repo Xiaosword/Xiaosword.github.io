@@ -1,6 +1,6 @@
-import Home from './pages/Home';
+import Home from './pages/Home'
 const App: React.FC = () => {
-  return <Home />;
-};
+  return <Home />
+}
 
-export default App;
+export default App

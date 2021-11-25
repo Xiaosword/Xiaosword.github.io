@@ -1,7 +1,7 @@
 {
   "name": "time-line",
   "version": "0.0.1",
-  "homepage": "./",
+  "homepage": "https://xiaosword.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
