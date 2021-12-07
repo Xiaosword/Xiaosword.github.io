@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import { Container, Typography, Box } from '@material-ui/core'
+import Container from '@mui/material/Container'
+import Typography from '@mui/material/Typography'
+import Box from '@mui/material/Box'
 import { dateFormat } from '../utils/date'
 import './home.less'
 
@@ -21,19 +23,29 @@ const Home: React.FC = () => {
   }
 
   return (
-    <Container maxWidth="sm" className="home-wrapper">
-      <Box sx={{ pt: 4 }} bgcolor="transparent">
-        <Typography color="textPrimary" align="center" variant="h4" component="div" gutterBottom>
-          <div className="title">时间轴</div>
+    <Container className="home-wrapper" maxWidth="sm">
+      <Box className="container" sx={{ pt: 4 }} bgcolor="transparent">
+        <Typography color="textPrimary" align="center" component="div">
+          <img
+            className="avatar"
+            src="https://cdn.jsdelivr.net/gh/imloren/cdn/img/avatar.png"
+            alt=""
+          />
         </Typography>
         <Typography color="textPrimary" align="center" component="div">
-          <div className="xiangshi time-text">相识：{know}</div>
+          <div className="user-name">赤霄</div>
         </Typography>
         <Typography color="textPrimary" align="center" component="div">
-          <div className="love time-text">恋爱：{love}</div>
+          <div className="position">剑网3华乾气纯 季汉粉 嵩鼠</div>
         </Typography>
         <Typography color="textPrimary" align="center" component="div">
-          <div className="jxsan time-text">AFK：{jxsan}</div>
+          <div className="xiangshi time-text">与夫人相识：{know}</div>
+        </Typography>
+        <Typography color="textPrimary" align="center" component="div">
+          <div className="love time-text">与夫人相恋：{love}</div>
+        </Typography>
+        <Typography color="textPrimary" align="center" component="div">
+          <div className="jxsan time-text">离开剑三：{jxsan}</div>
         </Typography>
       </Box>
     </Container>
