@@ -28,7 +28,7 @@ const Home: React.FC = () => {
         <Typography color="textPrimary" align="center" component="div">
           <img
             className="avatar"
-            src="https://cdn.jsdelivr.net/gh/imloren/cdn/img/avatar.png"
+            src="https://cdn.jsdelivr.net/gh/imloren/cdn/img/avatar.jpg"
             alt=""
           />
         </Typography>
