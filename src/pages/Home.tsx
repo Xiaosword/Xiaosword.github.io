@@ -33,12 +33,6 @@ const Home: React.FC = () => {
           />
         </Typography>
         <Typography color="textPrimary" align="center" component="div">
-          <div className="user-name">赤霄</div>
-        </Typography>
-        <Typography color="textPrimary" align="center" component="div">
-          <div className="position">剑网3华乾气纯 季汉粉 嵩鼠</div>
-        </Typography>
-        <Typography color="textPrimary" align="center" component="div">
           <div className="xiangshi time-text">与夫人相识：{know}</div>
         </Typography>
         <Typography color="textPrimary" align="center" component="div">
