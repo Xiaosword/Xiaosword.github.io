@@ -8,7 +8,8 @@ import './home.less'
 const Home: React.FC = () => {
   const [know, setKnow] = useState(dateFormat('9 4,2015'))
   const [love, setLove] = useState(dateFormat('2 5,2016'))
-  const [jxsan, setJxsan] = useState(dateFormat('9 1,2017'))
+  // const [jxsan, setJxsan] = useState(dateFormat('9 1,2017'))
+  const [weddingDay, setWeddingDay] = useState(dateFormat('8 22,2023'))
 
   useEffect(() => {
     loadData()
@@ -18,7 +19,8 @@ const Home: React.FC = () => {
     setInterval(() => {
       setKnow(dateFormat('9 4,2015'))
       setLove(dateFormat('2 5,2016'))
-      setJxsan(dateFormat('9 1,2017'))
+      // setJxsan(dateFormat('9 1,2017'))
+      setWeddingDay(dateFormat('8 22,2023'))
     }, 1000)
   }
 
@@ -33,14 +35,17 @@ const Home: React.FC = () => {
           />
         </Typography>
         <Typography color="textPrimary" align="center" component="div">
-          <div className="xiangshi time-text">与夫人相识：{know}</div>
+          <div className="xiangshi time-text">相识：{know}</div>
         </Typography>
         <Typography color="textPrimary" align="center" component="div">
-          <div className="love time-text">与夫人相恋：{love}</div>
+          <div className="love time-text">相恋：{love}</div>
         </Typography>
         <Typography color="textPrimary" align="center" component="div">
+          <div className="wedding time-text">结婚：{weddingDay}</div>
+        </Typography>
+        {/* <Typography color="textPrimary" align="center" component="div">
           <div className="jxsan time-text">离开剑三：{jxsan}</div>
-        </Typography>
+        </Typography> */}
       </Box>
     </Container>
   )
