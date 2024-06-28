@@ -19,21 +19,12 @@ const Home: React.FC = () => {
     setInterval(() => {
       setKnow(dateFormat('9 4,2015'))
       setLove(dateFormat('2 5,2016'))
-      // setJxsan(dateFormat('9 1,2017'))
       setWeddingDay(dateFormat('8 22,2023'))
     }, 1000)
   }
-
   return (
     <Container className="home-wrapper" maxWidth="sm">
       <Box className="container" sx={{ pt: 4 }} bgcolor="transparent">
-        <Typography color="textPrimary" align="center" component="div">
-          <img
-            className="avatar"
-            src="https://cdn.jsdelivr.net/gh/imloren/cdn/img/avatar.jpg"
-            alt=""
-          />
-        </Typography>
         <Typography color="textPrimary" align="center" component="div">
           <div className="xiangshi time-text">相识：{know}</div>
         </Typography>
@@ -43,9 +34,6 @@ const Home: React.FC = () => {
         <Typography color="textPrimary" align="center" component="div">
           <div className="wedding time-text">结婚：{weddingDay}</div>
         </Typography>
-        {/* <Typography color="textPrimary" align="center" component="div">
-          <div className="jxsan time-text">离开剑三：{jxsan}</div>
-        </Typography> */}
       </Box>
     </Container>
   )
