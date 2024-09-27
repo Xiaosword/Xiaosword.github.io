@@ -7,5 +7,8 @@ export default defineConfig({
     favicon: 'http://tuchuang.zaibk.com/2024/09/27/87ecbc041a1de.jpg',
     title: '☁️时光刻录机☁️'
   },
+  output: {
+    assetPrefix: '/time/'
+  },
   plugins: [pluginReact(), pluginLess()]
 })
