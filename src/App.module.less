@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+}
+
+.App-wrapper {
+  :global {
+    .home-wrapper {
+      height: 100%;
+      .container {
+        overflow-y: auto;
+      }
+
+      // .avatar {
+      //   width: 90px;
+      //   height: 90px;
+      //   object-fit: cover;
+      //   border-radius: 50%;
+      //   background-color: #f9f9f9;
+
+      //   &:hover {
+      //     transform: rotate(666turn);
+      //     transition-delay: 1s;
+      //     transition-property: all;
+      //     transition-duration: 59s;
+      //     transition-timing-function: cubic-bezier(0.34, 0, 0.84, 1);
+      //   }
+      // }
+
+      .user-name {
+        margin-bottom: 10px;
+        color: #000;
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      .position {
+        color: #72777b;
+      }
+
+      .xiangshi {
+        color: #90caf9;
+      }
+
+      .love {
+        color: #9fa8da;
+      }
+
+      .jxsan {
+        color: #b39ddb;
+      }
+
+      .wedding {
+        color: royalblue;
+      }
+
+      .time-text {
+        margin: 20px 0;
+        font-size: 16px;
+        letter-spacing: 1px;
+      }
+    }
+
+    .home-wrapper::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
