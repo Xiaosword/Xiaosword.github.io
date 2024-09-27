@@ -1,20 +1,15 @@
-# 用于构建和部署 Rsbuild 站点到 GitHub Pages 的示例工作流
 name: Rsbuild Deployment
 
 on:
-  # 在推送到默认分支时触发
   push:
     branches: ['master']
-  # 允许你从 Actions Tabs 手动运行这个工作流
   workflow_dispatch:
 
-# 设置 GITHUB_TOKEN 的权限以允许部署到 GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# 同时只允许一个部署执行
 concurrency:
   group: 'pages'
   cancel-in-progress: false
@@ -32,8 +27,6 @@ jobs:
         with:
           node-version: 20
 
-      # 如果你使用其他的包管理器，如 yarn 或 pnpm，
-      # 你需要先安装它们
       - name: Install dependencies
         run: npm i
 
@@ -48,6 +41,8 @@ jobs:
         with:
           path: './dist'
 
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - name: 🚀 Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
+        with:
+          branch: gh-pages
+          folder: dist
