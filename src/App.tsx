@@ -1,27 +1,27 @@
-import { useEffect, useState } from 'react'
-import Container from '@mui/material/Container'
-import Typography from '@mui/material/Typography'
-import Box from '@mui/material/Box'
-import { dateFormat } from './utils'
-import styles from './App.module.less'
+import { useEffect, useState } from 'react';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import { dateFormat } from './utils';
+import styles from './App.module.less';
 
 const App = () => {
-  const [know, setKnow] = useState(dateFormat('9 4,2015'))
-  const [love, setLove] = useState(dateFormat('2 5,2016'))
+  const [know, setKnow] = useState(dateFormat('9 4,2015'));
+  const [love, setLove] = useState(dateFormat('2 5,2016'));
   // const [jxsan, setJxsan] = useState(dateFormat('9 1,2017'))
-  const [weddingDay, setWeddingDay] = useState(dateFormat('8 22,2023'))
+  const [weddingDay, setWeddingDay] = useState(dateFormat('8 22,2023'));
 
   useEffect(() => {
-    loadData()
-  }, [])
+    loadData();
+  }, []);
 
   const loadData = () => {
     setInterval(() => {
-      setKnow(dateFormat('9 4,2015'))
-      setLove(dateFormat('2 5,2016'))
-      setWeddingDay(dateFormat('8 22,2023'))
-    }, 1000)
-  }
+      setKnow(dateFormat('9 4,2015'));
+      setLove(dateFormat('2 5,2016'));
+      setWeddingDay(dateFormat('8 22,2023'));
+    }, 1000);
+  };
 
   return (
     <div className={styles['App-wrapper']}>
@@ -39,7 +39,7 @@ const App = () => {
         </Box>
       </Container>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
